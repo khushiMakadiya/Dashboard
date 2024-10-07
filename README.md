@@ -1,1 +1,1 @@
-GIFdashboardimg.png
+GIF/GIFdashboardimg.png
