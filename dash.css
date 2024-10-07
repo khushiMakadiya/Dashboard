@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --french-gray: #BCBEC7;
+    --black: #030305;
+    --licorice: #24191C;
+    --cadet-gray: #A4A6AF;
+    --night: #0E0A0C;
+    --french-gray-2: #D4D6DE;
+    --jet: #323138;
+    --black-bean: #4A0B0D;
+    --ou-crimson: #8B1212;
+    --dim-gray: #73727C;
+}
+
+.main-continer {
+    height: auto;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.main-page {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh 40vh 45vh;
+    /* border: 2px solid red; */
+}
+
+ /* .parts-of-page {
+    border: 2px solid white;
+}  */
+
+/* .maybe-box {
+    background-color: brown;
+} */
+
+.links {
+    text-decoration: none;
+    color: red;
+    display: inline-block;
+    height: 6vh;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.links::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    transition: 0.3s;
+    width: 0;
+    background-color: var(--french-gray-2);
+}
+
+.links:hover::after {
+    width: 100%;
+}
+
+.log_sign_btns {
+    height: 33px;
+    width: 45%;
+    border-radius: 20px;
+    border: 2px solid brown;
+    background-color: transparent;
+    color: white;
+}
+
+.sign_in_btn {
+    background-color: brown;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.create-box {
+    height: 90%;
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.cr_ac_bx {
+  height: 50px;
+  width: 50px;
+  /* border: 2px solid yellow; */
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.cr_ac_bx:nth-child(1) {
+    background-color: gray;
+}
+
+.cr_ac_bx:nth-child(2) {
+    background-color: var(--ou-crimson);
+}
+
+.links-box {
+    height: 90%;
+    width: 34%;
+    /* border: 2px solid pink; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.log_sign_box {
+    height: 90%;
+    width: 20%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.whole_page_parts {
+    height: 270px;
+    width: 93%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 3rem;
+    border-radius: 10px;
+    padding: 4px;
+    background-color: #8B1212;
+}
+
+.about-section {
+    /* border: 2px solid green; */
+    margin-bottom: 2%;
+    background-color: transparent;
+}
+
+
+
+.knave {
+    height: 270px;
+    width: 20%;
+    /* border: 3px solid red; */
+}
+
+.char-box2 {
+    width: 26%;
+}
+
+.char-box3 {
+    width: 10%;
+}
+
+.char-box4 {
+    width: 45%;
+}
+
+.hero_section_parts {
+    height: 270px;
+    width: 30%;
+    /* border: 2px solid yellow; */
+}
+
+.art-box1 {
+    width: 39%;
+}
+
+.art-box2 {
+    width: 33%;
+}
+
+.art-box3 {
+    width: 10%;
+}
+
+.art-box3 {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.gen {
+    font-size: 30px;
+    padding-top: 12%;
+    margin-left: 10%;
+}
+
+.nino {
+    padding-top: 6rem;
+    font-size: 33px;
+}
+
+.fau {
+    font-size: 17px;
+}
+
+.read_more_btn {
+    text-decoration: none;
+    color: white;
+    padding-right: 1.5rem;
+    padding-top: 15rem;
+    font-style: bold;
+    align-self: flex-end;
+    height: 5vh;
+    width: 100px;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.read_more_btn::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    top: 15.8rem;
+    background-color: red;
+}
+
+.char_img {
+    height: 115%;
+    width: 115%;
+    /* position: absolute; */
+    object-fit: contain;
+    position: relative;
+    bottom: 3rem;
+    right: 3.5rem;
+    /* z-index: 10; */
+    /* transform: scale(110%); */
+}
+
+.art_work_box {
+    height: 60px;
+    width: 100%;
+    padding-top: 1rem;
+    margin-top: 5%;
+    /* background-color: blue; */
+}
+
+.art_img_box {
+    height: 20vh;
+    width: 32%;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: top;
+}
+
+.art_img_more_btn {
+    width: 99%;
+    height: 5vh;
+    border-radius: 15px;
+    border: none;
+}
+
+.char_search_btn {
+    height: 13%;
+    width: 75%;
+    top: 2rem;
+    position: relative;
+    left: 3rem;
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.char_search_btn a {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.char_stick {
+    height: 100px;
+    width: 100px;
+    margin-top: 1rem;
+    /* background-color: aqua; */
+    border-radius: 15px;
+    border: none;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.char_stick:hover {
+    transform: scale(105%);
+}
+
+.stock {
+    margin-top: 1rem;
+}
+
+.pyro_box1 {
+    height: 70px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: var(--black-bean);
+}
+
+.pyro_box2 {
+    height: 70px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3%;
+    border-radius: 10px;
+    background-color: var(--black-bean);
+}
+
+.pyro_box3 {
+    height: 70px;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3%;
+    border-radius: 10px;
+    background-color: var(--black-bean);
+}
+
+.star_box1 {
+    height: 70px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+}
+
+.star_box2 {
+    height: 70px;
+    width: 55%;
+    /* border: 2px solid green; */
+}
+
+.char_type_el {
+    height: 95%;
+    width: 68%;
+    object-fit: cover;
+}
+
+.index-in1 {
+    font-size: 21px;
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+
+.index-in2 {
+    font-size: 13px;
+    padding-top: 4%;
+    padding-left: 5%;
+}
+
+
