@@ -1,1 +1,2 @@
-dashboardimggif
+![Project Screenshot](./GIF/GIFdashboardimg.png)
+
